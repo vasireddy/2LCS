@@ -20,6 +20,7 @@ using Xceed.Document.NET;
 using Xceed.Words.NET;
 using static LCS.NativeMethods;
 using System.Globalization;
+using System.Configuration;
 
 namespace LCS.Forms
 {
@@ -930,7 +931,7 @@ namespace LCS.Forms
                 document.InsertParagraph("Project Id: " + _selectedProject.Id).FontSize(14d).SpacingAfter(100d);
                 document.InsertParagraph(_selectedProject.OrganizationName).CapsStyle(CapsStyle.caps).FontSize(30d).InsertPageBreakAfterSelf();
 
-                Hyperlink link2LCS = document.AddHyperlink("2LCS", new Uri("https://github.com/Microsoft/2LCS"));
+                Hyperlink link2LCS = document.AddHyperlink("2LCS", new Uri(ConfigurationManager.AppSettings["link2LCS"]));
                 document.AddFooters();
                 document.AddHeaders();
                 document.DifferentFirstPage = true;
