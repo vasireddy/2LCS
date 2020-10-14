@@ -1,5 +1,7 @@
 # 2LCS - Lifecycle Services companion app
 
+[![Build Status](https://dev.azure.com/AZDevOps400T00/LCS%20Companion%20App/_apis/build/status/vasireddy.2LCS?branchName=master)](https://dev.azure.com/AZDevOps400T00/LCS%20Companion%20App/_build/latest?definitionId=8&branchName=master)
+
 This small utility can help you manage D365FO instances deployed in your LCS project. Both cloud-hosted - in your Azure subscription and Microsoft-hosted sandboxes. It offers only a subset of functionalities that LCS offers, but you can execute them a bit faster.
 To download latest version go to [Releases section](https://github.com/Microsoft/2LCS/releases) and download zip archive (2LCS-X.X.X.X.zip) with compiled app. 
 # Quick tips
